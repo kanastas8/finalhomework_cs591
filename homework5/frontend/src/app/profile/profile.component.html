@@ -1,0 +1,14 @@
+<h1>Users</h1>
+<h3>To add you as a user, enter your individual username and favourite movie</h3>
+<div class="todo-input-wrapper">
+  <input type="text" placeholder="Name" [(ngModel)]="name" (keyup.enter)="addUser()">
+  <input type="text" placeholder="Favorite Movie" [(ngModel)]="favmovie" (keyup.enter)="addUser()">
+  <button class="btn btn-primary" (click)="addUser()">Add</button>
+  <h3>Authentication through Google can happen if you press the button below</h3>
+  <button class="btn btn-primary" (click)="getOath()">Google Authenticate</button>
+
+  <p>{{result}}</p>
+</div>
+
+
+
